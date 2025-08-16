@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+
+public class exam {
+
+    public static void main(String[] args) {
+        
+        
+        String araw, year;
+        int month;
+        
+        
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter the Month: ");
+        month=scan.nextInt();
+        scan.nextLine();
+        
+        System.out.println("Enter the Day: ");
+        araw=scan.nextLine();
+
+        System.out.println("Enter the Year: ");
+        year=scan.nextLine();
+
+
+
+        switch (month) {
+            case 1:
+                System.out.println("January "+ araw+", " + year);
+                break;
+            case 2:
+                System.out.println("February "+ araw+", " + year);
+                break;
+            case 3:
+                System.out.println("March "+ araw+", " + year);
+                break;
+            case 4:
+                System.out.println("April "+ araw+", " + year);
+                break;
+            case 5:
+                System.out.println("May "+ araw+", " + year);
+                break;
+            default:
+                System.out.println("Invalid Date Format");
+        }
+
+    }
+}
