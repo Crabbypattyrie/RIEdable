@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class exam {
+
+    public static void main(String[] args){
+        
+        String number;
+        
+        Scanner scan = new Scanner(System.in);
+
+        while (true){
+            
+            System.out.print("Enter Your Student Number: ");
+            number = scan.nextLine();
+            
+            switch(number){
+                
+                case "25-00001":
+                System.out.println("Patrick J. Pardillo");
+                System.out.println("Verified");
+                break;
+                
+                case "25-0002":
+                System.out.println("Carl Vans Pantia");
+                System.out.println("Verified");
+                break;
+                
+                case "25-0003":
+                System.out.println("Glen Mhar Domingo");
+                System.out.println("Verified");
+                break;
+                
+                case "25-0004":
+                System.out.println("John Bryan Vadepena");
+                System.out.println("Verified");
+                break;
+                
+                case "25-0005":
+                System.out.println("Jessmark Calendation");
+                System.out.println("Verified");
+                break;
+                
+                case "25-0006":
+                System.out.println("Christian T. Guzman");
+                System.out.println("Verified");
+                break;
+                
+                default:
+                System.out.println("Invalid Student Number");
+            }
+        }
+
+
+
+    }
+}
