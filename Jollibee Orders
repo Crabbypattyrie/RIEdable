@@ -1,0 +1,148 @@
+import java.util.Scanner;
+public class exam {
+
+    public static void main(String [] args){
+
+
+        String dt;
+        int order;
+        String u1;
+        String op;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Welcome To Jollibee");
+        System.out.println("1. Dine In or 2. Take Out?");
+        dt = scan.nextLine();
+
+        if (dt.equalsIgnoreCase("1")){
+            dt = "Dine In";
+        }
+        if (dt.equalsIgnoreCase("2")){
+            dt = "Take Out";
+        }
+
+        while(true){
+
+        System.out.println("~~Mixed And Match~~");
+        System.out.println("Choose Your Main");
+        System.out.println("1. Jolly Spaghetti");
+        System.out.println("2. Burger Steak");
+        System.out.println("3. Yumburger");
+        System.out.println("4. Jolly Hotdog");
+        System.out.println("5. Chessy Yumburger");
+        System.out.println("6. Crunchy Chicken Sandwich");
+        System.out.println("7. 4pc. Chicken Nuggets");
+        System.out.println("What is the number of your main?");
+        order = scan.nextInt();
+
+        System.out.println("Choose Your Side");
+        System.out.println("1. Soda Float");
+        System.out.println("2. Peach Mango Pie");
+        System.out.println("3. Jolly Crispy Fries");
+        System.out.println("4. Pineapple Juice");
+        System.out.println("5. Choco Sundae");
+        System.out.println("6. Iced Lattle");
+        
+        System.out.println("What is the number of your Side?");
+        scan.nextLine();
+        u1 = scan.nextLine();
+
+             switch (u1){
+                case "1":
+                u1 = "Soda float";
+                break;
+
+                case "2":
+                u1 = "Peach Mango Pie";
+                break;
+
+                case "3":
+                u1 = "Jolly Crispy Fries";
+                break;
+
+                case "4":
+                u1 = "Pineapple Juice";
+                break;
+
+                case "5":
+                u1 = "Choco Sundae";
+                break;
+
+                case "6":
+                u1 = "Iced Lattle";
+                break;
+            }
+
+            if (order == 1) {
+                int o1 = 78;
+                System.out.println("Type of Order: " + dt);             
+                System.out.println("Combo: Jolly Spaghetti, " + u1);
+                System.out.println("Total: " + o1);
+                }
+
+            if(order == 2){
+                int o1 = 78;
+
+                System.out.println("Type of Order: " + dt);
+                System.out.println("Combo: Burger Steak, " + u1);
+                System.out.println("Total: " + o1);
+            }
+
+            if (order == 3){
+                int o1 = 78;
+
+                System.out.println("Type of Order: " + dt);
+                System.out.println("Combo: Yumburger, " + u1);
+                System.out.println("Total: " + o1);
+            }
+
+            if (order == 4){
+                int o1 = 88;
+
+                System.out.println("Type of Order: " + dt);
+                System.out.println("Combo: Jolly Hotdog, " + u1);
+                System.out.println("Total: " + o1);
+            }
+
+            if (order == 5){
+                int o1 = 88;
+
+                System.out.println("Type of Order: " + dt);
+                System.out.println("Combo: Cheesy Yumburger, " + u1);
+                System.out.println("Total: " + o1);
+            }
+
+            if (order == 6){
+                int o1 = 88;
+
+                System.out.println("Type of Order: " + dt);
+                System.out.println("Combo: Crunchy Chicken Sandwich, " + u1);
+                System.out.println("Total: " + o1);
+            }
+
+            if (order == 7){
+                int o1 = 88;
+
+                System.out.println("Type of Order: " + dt);
+                System.out.println("Combo: 4pc. Chicken Nuggets, " + u1);
+                System.out.println("Total: " + o1);
+            }
+
+            System.out.println("You want to add more to your order?");
+            System.out.println("1. Yes 2. No");
+            op = scan.nextLine();
+
+            if(op.equalsIgnoreCase("1")){
+                System.out.println("Here's");
+            }else{
+                System.out.println("Printing Your Receipt");
+                break;
+            }
+
+        }
+
+
+
+    }
+}
