@@ -14,7 +14,7 @@ public class Conditionals {
 		age=scan.nextInt();
 				
 		if(age >= 18) 
-			System.out.println("You Have Access, Matanda kana Nigga");
+			System.out.println("You Have Access, Matanda kana");
 		else if(age >= 13) 
 	        System.out.println("You Are Not Qualify To Age Restriction");
 		else
@@ -24,3 +24,4 @@ public class Conditionals {
 	}
 	
 }
+
